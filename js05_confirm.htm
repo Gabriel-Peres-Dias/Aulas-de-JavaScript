@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Aula Confirm </title>
+</head>
+
+<body>
+    <h2></h2>
+    <script language="javascript">
+        /* Objetivo: Desenvolver um programa que faça o teste de execução de duas opções;
+        Utilizando o método confirm, vereficar o botão selecionado pelo usuário e apresentar a opção selecionada. */
+
+        /*definição de variáveis */
+        var js_resp;
+
+        /* Após o botão selecionado, o js_resp receberá um valor lógico true ou false, capturado pelo método confirm */
+
+        js_resp = window.confirm('Ao clicar em OK você será redirecionado para a tela de login, e ao clicar em cancelar você ficará na mesma página. ');
+
+        /* Decisão Condicional Composta if/else comparado ao valor lógico true*/
+
+        if (js_resp == true) {
+            document.write('Voce acionou  o botão : <b>OK</b>!!!');
+            window.location.href = "../../TCC/projeto/home/home_administrador.html";
+
+        } else {
+            document.write('Voce acionou o botão: <b>Cancelar</b> !!!');
+            window.location.href = "#";
+        }
+
+
+        /* Saída de Dados */
+    </script>
+</body>
+
+</html>
